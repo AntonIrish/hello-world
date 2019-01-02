@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include <unistd.h>
 
 int main(int argc, char **argv) {
-  printf("Hello, world!\n");
+  write(1, "Hello, world!\n", 14);
   return 0;
 }
+
